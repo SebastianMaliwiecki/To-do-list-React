@@ -1,0 +1,43 @@
+.completed {
+    text-decoration: line-through;
+}
+
+li {
+    list-style-type: none;
+    margin: 0.5rem;
+    background: white;
+    font-size: 18px;
+    transition: .4s ease-in-out;
+}
+
+li:hover {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.completeBtn, .deleteBtn, .undoBtn {
+    background-color: white;
+    color: black;
+    border:solid 2px #1f1f1f;
+    transition: .4s ease-in-out;
+    font-size: 15px;
+    height: 33px;
+}
+.completeBtn, .undoBtn {
+    margin-right: 3px;
+    margin-left: 10px;
+}
+
+.completeBtn:hover {
+    background-color: green;
+    color: white;
+}
+.undoBtn:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.deleteBtn:hover {
+    background-color: rgb(168, 31, 31);
+    color: white;
+}

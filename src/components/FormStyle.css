@@ -1,0 +1,42 @@
+.inputText {
+    width: 50%;
+    resize: both;
+    padding: 12px 18px;
+    margin-right: 5px;
+    font-size: 15px;
+    border:solid 2px #1f1f1f;
+}
+
+.submitBtn {
+    padding: 12px 18px;
+    background-color: white;
+    color: black;
+    transition: .4s ease-in-out;
+    margin-right: 20px;
+    border-radius: 0px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    border:solid 2px #1f1f1f;
+}
+
+.submitBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.filterOpt {
+    padding: 12px 18px;
+    border:solid 2px #1f1f1f;
+    transition: .4s ease-in-out;
+}
+
+
+.filterOpt:hover {
+    background-color: black;
+    color: white;
+}
+
+.option{
+    background-color: #000;
+}
