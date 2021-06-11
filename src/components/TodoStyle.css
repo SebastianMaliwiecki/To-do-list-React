@@ -8,12 +8,29 @@ li {
     background: white;
     font-size: 18px;
     transition: .4s ease-in-out;
+    display: block;
 }
 
 li:hover {
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width : 800px) {
+    li:hover {
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .optionButtons {
+        text-align: center;
+    }
+
+    li {
+        font-size: 13px;
+    }
 }
 
 .completeBtn, .deleteBtn, .undoBtn {

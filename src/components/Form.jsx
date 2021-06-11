@@ -39,8 +39,8 @@ function Form({setInputText, toDo, setToDo, inputText, setFilterStatus}) {
                 </button>
                 <select onClick={statusHandler} className="filterOpt">
                     <option value="all" className="option">All</option>
-                    <option value="notcompleted" className="option">Not-completed</option>
                     <option value="completed" className="option">Completed</option>
+                    <option value="notcompleted" className="option">Not-completed</option>
                 </select>
             </form>
         </div>

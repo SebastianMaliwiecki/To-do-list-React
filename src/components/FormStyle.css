@@ -1,5 +1,5 @@
 .inputText {
-    width: 50%;
+    width: 500px;
     resize: both;
     padding: 12px 18px;
     margin-right: 5px;
@@ -39,4 +39,25 @@
 
 .option{
     background-color: #000;
+}
+
+.option:active, .inputText:active, .submitBtn:active {
+    border-radius: 0px;
+}
+
+@media screen and (max-width : 800px) {
+    .inputText {
+        width: auto;
+    }
+
+    .submitBtn {
+        margin-right: 0px;
+    }
+    
+
+    .option {
+        padding-top: 10px;
+    }
+
+    
 }

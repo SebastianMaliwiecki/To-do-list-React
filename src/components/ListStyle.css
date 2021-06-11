@@ -1,3 +1,10 @@
 ul {
     text-align: right;
 }
+
+@media screen and (max-width : 800px) {
+    ul {
+        text-align: center;
+        margin-left: -37px;
+    }
+}

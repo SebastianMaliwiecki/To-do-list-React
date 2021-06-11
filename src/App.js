@@ -9,12 +9,17 @@ function App() {
   const [toDo, setToDo] = useState([]);
   const [status, setFilterStatus] = useState("all");
   const [filteredList, setFilteredList] = useState([]);
+  const [titleStatus, setTitleStatus] = useState("All");
 
   useEffect(() => {
     const localList = JSON.parse(localStorage.getItem("todoList"));
     if(localList)
       setToDo(localList);
   }, [])
+
+  useEffect(() => {
+    document.title = titleStatus+" todo's: "+filteredList.length
+  }, [filteredList]);
 
   useEffect(() => {
     localStorage.setItem("todoList", JSON.stringify(toDo));
@@ -25,12 +30,15 @@ function App() {
     switch(status) {
       case 'completed':
         setFilteredList(toDo.filter((todo) => todo.complete === true));
+        setTitleStatus("Completed");
         break;
       case 'notcompleted':
         setFilteredList(toDo.filter((todo) => todo.complete === false))
+        setTitleStatus("Not compeleted");
         break;
       default:
         setFilteredList(toDo);
+        setTitleStatus("All");
         break;
     }
 
@@ -39,14 +47,11 @@ function App() {
     }
   }, [toDo, status]);
 
-
-  
-
   return (
     <main>
       <header>
         <h1>
-          To Do List 1.0
+          To Do List 📝
         </h1>
       </header>
       <Form 
