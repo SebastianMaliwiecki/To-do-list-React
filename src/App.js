@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     document.title = titleStatus+" todo's: "+filteredList.length
-  }, [filteredList]);
+  });
 
   useEffect(() => {
     localStorage.setItem("todoList", JSON.stringify(toDo));
